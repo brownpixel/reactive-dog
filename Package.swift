@@ -13,7 +13,7 @@ let package = Package(
         .library(
             name: "ReactiveDog",
             targets: ["ReactiveDog"]),
-        .library(name: "ReactivDogDeps", targets: ["ReactivDogDeps"])
+        .library(name: "ReactivDogDeps", type: .dynamic, targets: ["ReactivDogDeps"])
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exact("6.2.0"))
